@@ -1,0 +1,11 @@
+com\example\telegramchatbot\settings\db\TgUser.class
+com\example\telegramchatbot\settings\db\TelegramUserRepository.class
+com\example\telegramchatbot\settings\db\TelegramUserService.class
+com\example\telegramchatbot\settings\messagesender\MessageSender.class
+com\example\telegramchatbot\TelegramChatBotApplication.class
+com\example\telegramchatbot\settings\db\TelegramUserImpl.class
+com\example\telegramchatbot\settings\messagesender\MessageSenderImpl.class
+com\example\telegramchatbot\settings\db\TelegramUser.class
+com\example\telegramchatbot\settings\db\Dictionary.class
+com\example\telegramchatbot\settings\TelegramChatBot.class
+com\example\telegramchatbot\settings\messagesender\MessageSenderService.class
