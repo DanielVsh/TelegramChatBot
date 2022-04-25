@@ -51,7 +51,7 @@ public class TelegramChatBot extends TelegramLongPollingBot {
       String nickName = update.getMessage().getFrom().getUserName();
       Long userId = update.getMessage().getFrom().getId();
       ArrayList<String> words = new ArrayList<>(
-          List.of(message.split("[-!@#$%^&*()_+<>,.\\/?=1234567890;: \n\t]")));
+          List.of(message.split("[-!@#$%^&*()_+<>,.\\/?=1234567890;:\" \n\t]")));
       words = (ArrayList<String>) words.stream()
           .map(String::toLowerCase)
           .filter(s -> s.length() > 1)
@@ -108,7 +108,7 @@ public class TelegramChatBot extends TelegramLongPollingBot {
       } else {
         if (update.getMessage().getChatId() < 0) {
           for (String word : words) {
-            if (word.length() < 255) {
+            if (word.length() < 30) {
               if (!telegramUserService.isWordByUserIdExistsInDB(userId, word)) {
                 telegramUserService.add(new TgUser(userId, nickName, word));
               }
